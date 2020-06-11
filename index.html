@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="grocery.css" />
+    <title>Grocery List</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="date-div">
+          <p class="date"></p>
+        </div>
+        <div class="title">
+          <p class="heading">Grocery List</p>
+          <p class="subheading">for the Market</p>
+        </div>
+        <div class="form">
+          <input
+            type="text"
+            name="item"
+            class="item-input"
+            placeholder="Enter a grocery item...."
+          />
+          <button class="item-button"><i class='fa fa-cart-plus'></i></button>
+        </div>
+        <div class="grocery-container">
+          <ol class="grocery-list"></ol>
+        </div>
+      </div>
+    </div>
+    <script src="grocery.js"></script>
+  </body>
+</html>

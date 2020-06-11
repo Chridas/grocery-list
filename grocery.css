@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("grocery.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 14px;
+  font-family: "Kalam", cursive;
+  min-height: 100vh;
+  font-weight: 300;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 40vw;
+  height: 75%;
+  padding: 2em 0 2em;
+  border: 5px solid rgb(202, 202, 20);
+  background-color: rgba(235, 245, 104, 0.25);
+}
+
+.date-div {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+  height: 8%;
+  font-size: 1.8em;
+  color: rgb(29, 97, 29);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 15%;
+}
+
+.heading {
+  font-size: 3.5rem;
+  color: orange;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 0.8em;
+  text-shadow: 2px 0 0 rgb(29, 97, 29);
+}
+
+.subheading {
+  font-size: 1.5rem;
+  color: rgb(29, 97, 29);
+  font-weight: 400;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  height: 8%;
+  min-width: 70%;
+}
+
+input[type="text"] {
+  font-family: "Kalam", cursive;
+  font-size: 1.5rem;
+}
+
+.form input,
+.form button {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+.form input {
+  color: rgb(29, 97, 29);
+  border-bottom: 1px dashed black;
+  width: 70%;
+}
+
+.form button {
+  font-size: 2.2em;
+  cursor: pointer;
+  transition: all 0.3sec ease;
+  color: orange;
+  align-items: flex-end;
+}
+
+.form button:hover {
+  color: rgb(29, 97, 29);
+}
+
+.grocery-container {
+  display: flex;
+  justify-content: center;
+  height: 60%;
+  width: 70%;
+  overflow: auto;
+}
+
+.grocery-list {
+  width: 80%;
+  font-size: 1.5em;
+}
+
+.item-div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.8em 0.3em 0;
+  background: transparent;
+  transition: all 0.5sec ease;
+  width: 100%;
+}
+
+.item-list {
+  width: 75%;
+  border-bottom: 1px dashed black;
+}
+
+.check-btn,
+.delete-btn {
+  font-size: 1em;
+  background-color: transparent;
+  cursor: pointer;
+  width: 10%;
+  border: none;
+}
+
+.check-btn {
+  color: rgb(29, 97, 29);
+}
+
+.check-btn:hover {
+  color: orange;
+}
+
+.delete-btn {
+  color: orange;
+}
+
+.delete-btn:hover {
+  color: rgb(29, 97, 29);
+}
+
+.fa-check,
+.fa-trash {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.fall {
+  transform: translateY(5em);
+  opacity: 0.2;
+  transition: transform 1s linear;
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 60vw;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .item-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .date-div {
+    justify-content: center;
+  }
+  .item-list {
+    width: 75%;
+  }
+  input[type="text"] {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+    width: 55vw;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .item-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .item-list {
+    width: 75%;
+  }
+  input[type="text"] {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    width: 50vw;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+  .item-list {
+    width: 70%;
+  }
+  input[type="text"] {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    width: 45vw;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+  .item-list {
+    width: 70%;
+  }
+  input[type="text"] {
+    font-size: 1.4rem;
+  }
+}
