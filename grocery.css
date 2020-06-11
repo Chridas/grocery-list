@@ -177,7 +177,10 @@ input[type="text"] {
     width: 60vw;
   }
   .heading {
-    font-size: 2rem;
+    font-size: 1.4rem;
+  }
+  .subheading {
+    font-size: 1.2rem;
   }
   .item-div {
     flex-direction: column;
