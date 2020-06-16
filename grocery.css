@@ -177,7 +177,6 @@ input[type="text"] {
     background-image: url("pineapple-l.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 120vh;
   }
   .wrapper{
     justify-content: flex-end;
@@ -195,10 +194,13 @@ input[type="text"] {
     font-size: 1.2rem;
   }
   .grocery-container {
-    height: 65%;
+    height: 580px;
   }
   .title {
-    height: 10%;
+    height: 100px;
+  }
+  .form {
+    height: 85px;
   }
   .item-div {
     align-items: center;
@@ -207,6 +209,7 @@ input[type="text"] {
   .date-div {
     justify-content: flex-end;
     font-size: 1.3rem;
+    height: 65px;
   }
   .item-list {
     width: 65%;
