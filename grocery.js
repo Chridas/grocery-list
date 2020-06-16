@@ -33,6 +33,11 @@ itemInput.addEventListener("keyup", (e) => {
   }
 });
 
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
 //Functions
 function createDiv(item) {
   if (item.length > 0) {
