@@ -173,47 +173,88 @@ input[type="text"] {
 }
 
 @media (max-width: 575.98px) {
+  body{
+    background-image: url("pineapple-l.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .wrapper{
+    justify-content: flex-end;
+  }
   .container {
-    width: 60vw;
-  }
-  .heading {
-    font-size: 1.4rem;
-  }
-  .subheading {
-    font-size: 1.2rem;
-  }
-  .item-div {
-    flex-direction: column;
-    align-items: center;
-  }
-  .date-div {
-    justify-content: center;
-    font-size: 1.2rem;
-  }
-  .item-list {
-    width: 75%;
-  }
-  input[type="text"] {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .container {
-    width: 55vw;
+    width: 85vw;
+    height: 95vh;
+    background-color: transparent;
+    border: none;
   }
   .heading {
     font-size: 2rem;
   }
+  .subheading {
+    font-size: 1.2rem;
+  }
+  .grocery-container {
+    height: 65%;
+  }
+  .title {
+    height: 10%;
+  }
   .item-div {
-    flex-direction: column;
     align-items: center;
+    width: 100%;
+  }
+  .date-div {
+    justify-content: flex-end;
+    font-size: 1.3rem;
+  }
+  .item-list {
+    width: 65%;
+  }
+  input[type="text"] {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body{
+    background-image: url("pineapple-l.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .wrapper{
+    justify-content: flex-end;
+  }
+  .container {
+    width: 85vw;
+    height: 95vh;
+    background-color: transparent;
+    border: none;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .subheading {
+    font-size: 1.4rem;
+  }
+  .grocery-container {
+    height: 65%;
+  }
+  .title {
+    height: 10%;
+  }
+  .item-div {
+    align-items: center;
+    width: 100%;
+  }
+  .date-div {
+    justify-content: flex-end;
+    font-size: 1.5rem;
   }
   .item-list {
     width: 75%;
   }
   input[type="text"] {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 
