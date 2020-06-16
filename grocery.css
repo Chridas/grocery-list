@@ -14,7 +14,6 @@ body {
   font-family: "Kalam", cursive;
   min-height: 100vh;
   font-weight: 300;
-  z-index: 1;
 }
 
 .wrapper {
@@ -178,7 +177,7 @@ input[type="text"] {
     background-image: url("pineapple-l.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
+    height: 120vh;
   }
   .wrapper{
     justify-content: flex-end;
