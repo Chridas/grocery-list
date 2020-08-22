@@ -35,10 +35,11 @@ itemInput.addEventListener("keyup", (e) => {
 
 //Functions
 function createDiv(item) {
-  if (item.length > 0) {
+  const trimmedItem = item.trim();
+  if (trimmedItem.length > 0) {
     const itemDiv = document.createElement("div");
     itemDiv.classList.add("item-div");
-    itemDiv.innerHTML = `<li class="item-list">${item}</li>
+    itemDiv.innerHTML = `<li class="item-list">${trimmedItem}</li>
                          <button class="check-btn"><i class='fas fa-check'></i></button>
                          <button class="delete-btn"><i class='fas fa-trash'></i></button>`;
     groceryList.appendChild(itemDiv);
