@@ -21,7 +21,9 @@ const months = [
   "December",
 ];
 const date = new Date();
-dateDiv.innerHTML = `${date.getDate()} ${months[date.getMonth()]}, ${date.getFullYear()}`;
+dateDiv.innerHTML = `${date.getDate()} ${
+  months[date.getMonth()]
+}, ${date.getFullYear()}`;
 
 // Event listeners
 document.addEventListener("DOMContentLoaded", getLocalItem);
@@ -86,8 +88,11 @@ function checkStorage() {
 
 function saveLocalItem(item) {
   checkStorage();
-  items.push(item);
-  localStorage.setItem("items", JSON.stringify(items));
+  const trimmedItem = item.trim();
+  if (trimmedItem.length > 0) {
+    items.push(trimmedItem);
+    localStorage.setItem("items", JSON.stringify(items));
+  }
 }
 
 function getLocalItem() {
